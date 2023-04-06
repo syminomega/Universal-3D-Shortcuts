@@ -54,7 +54,8 @@ The keyboard shortcuts are tested on the following program versions:
 In this case, the missing functionality of Blender is augmented with the help of the third-party addons. 
 
 1. Copy the files in the "With Addons" folder and paste them to: 
-`%USERPROFILE%\AppData\Roaming\Blender Foundation\Blender\YOUR BLENDER VERSION`
+`%USERPROFILE%\AppData\Roaming\Blender Foundation\Blender\YOUR BLENDER VERSION`  
+For mac users, paste the files to `~\Library\Application support\Blender\YOUR BLENDER VERSION`
 
 > :warning: **WARNING. This method will overwrite your Blender preferences. And restarting some addons may break shortcuts associated with the addon. You might want to create a backup before replacing files.**
 
@@ -63,6 +64,8 @@ In this case, no addons will be used for installation.
 
 1. In Blender go to: Blender Preferences -> Keymap -> Import
 2. Select "Universal_WO_Addons.py" in downloaded folder
+
+>  Note: **On Mac, you should import "mac_utilities.py" first.** Just ignore the errors while importing the "mac_utilities.py" file. Then import "Universal_WO_Addons.py".
 
 
 ## With Addons vs Without Addons

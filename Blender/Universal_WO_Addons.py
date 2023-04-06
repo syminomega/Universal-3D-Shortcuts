@@ -10721,10 +10721,12 @@ keyconfig_data = \
 
 # Replace key on mac
 import sys, os
-path = os.path.dirname(os.path.abspath(__file__))
-sys.path.append(path)
-from mac_utilities import optimize_for_mac
-optimize_for_mac(keyconfig_data)
+# check platform
+if sys.platform == "darwin":
+    path = os.path.dirname(os.path.abspath(__file__))
+    sys.path.append(path)
+    from mac_utilities import optimize_for_mac
+    optimize_for_mac(keyconfig_data)
 
 if __name__ == "__main__":
     # Only add keywords that are supported.
